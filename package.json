@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest/issues"
   },
-  "homepage": "https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest#readme"
+  "homepage": "https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest#readme",
+  "devDependencies": {
+    "cypress": "^14.5.4"
+  }
 }
