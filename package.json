@@ -1,0 +1,19 @@
+{
+  "name": "cypress-teste-front-serverest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest/issues"
+  },
+  "homepage": "https://github.com/RomuloSergioRE/Cypress-Teste-front-Serverest#readme"
+}
