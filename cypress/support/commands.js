@@ -23,3 +23,34 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('start', ()=>{
+    cy.viewport(1440, 900)
+    cy.visit('https://front.serverest.dev/login')
+})
+
+//helpers
+Cypress.Commands.add('loginEmailPassword', (email, password)=>{
+    cy.get('[data-testid="email"]')
+      .type(email)
+
+    cy.get('[data-testid="senha"]')
+      .type(password)
+    
+    cy.get('[data-testid="entrar"]')
+      .click()
+})
+Cypress.Commands.add('loginAdmin', ()=>{
+    cy.get('[data-testid="email"]')
+      .type('sergio12@teste.com')
+
+    cy.get('[data-testid="senha"]')
+      .type('sergio')
+    
+    cy.get('[data-testid="entrar"]')
+      .click()
+    
+    cy.contains('h1', 'Bem Vindo')
+        .should('be.visible')
+})
+
