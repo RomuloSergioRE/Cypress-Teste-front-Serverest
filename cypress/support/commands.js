@@ -24,6 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+
 Cypress.Commands.add('start', ()=>{
     cy.viewport(1440, 900)
     cy.visit('https://front.serverest.dev/login')
@@ -52,5 +53,9 @@ Cypress.Commands.add('loginAdmin', ()=>{
     
     cy.contains('h1', 'Bem Vindo')
         .should('be.visible')
+})
+Cypress.Commands.add('mensagem', (elemento , mesagem)=>{
+    cy.contains(elemento, mesagem)
+      .should('be.visible');
 })
 

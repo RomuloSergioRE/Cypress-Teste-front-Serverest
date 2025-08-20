@@ -1,0 +1,16 @@
+{
+  "userValido": {
+    "email": "romulo@teste.com",
+    "senha": "teste"
+  },
+  "userInvalido": {
+    "email_invalido": "romulo234324@gmail.com",
+    "senha_invalido": "testeafas"
+  },
+  "mensagensErro": {
+        "emailPasswordErro": "Email e/ou senha inválidos",
+        "emailErro": "Email é obrigatório",
+        "passwordErro": "Password é obrigatório"
+  },
+  "mensagensSucesso": {}
+}
