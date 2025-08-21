@@ -31,13 +31,15 @@ Cypress.Commands.add('start', ()=>{
 })
 
 //helpers
-Cypress.Commands.add('loginEmailPassword', (email, password)=>{
+Cypress.Commands.add('login', (email, senha)=>{
     cy.get('[data-testid="email"]')
       .type(email)
 
     cy.get('[data-testid="senha"]')
-      .type(password)
-    
+      .type(senha)
+
+})
+Cypress.Commands.add('submitLogin', ()=>{
     cy.get('[data-testid="entrar"]')
       .click()
 })
@@ -54,7 +56,7 @@ Cypress.Commands.add('loginAdmin', ()=>{
     cy.contains('h1', 'Bem Vindo')
         .should('be.visible')
 })
-Cypress.Commands.add('cadastrar', (nome, email, senha, admin)=>{
+Cypress.Commands.add('register', (nome, email, senha, admin)=>{
     cy.get('[data-testid="cadastrar"]')
       .click()
 
@@ -76,12 +78,13 @@ Cypress.Commands.add('cadastrar', (nome, email, senha, admin)=>{
           .check()
           .should('be.checked') 
     }
-
+})
+Cypress.Commands.add('submitRegister', ()=>{
     cy.get('[data-testid="cadastrar"]')
       .click()
 })
-Cypress.Commands.add('mensagem', (elemento , mesagem)=>{
-    cy.contains(elemento, mesagem)
+Cypress.Commands.add('message', (elemento , mensagem)=>{
+    cy.contains(elemento, mensagem)
       .should('be.visible');
 })
 

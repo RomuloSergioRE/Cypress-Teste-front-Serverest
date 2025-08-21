@@ -1,0 +1,22 @@
+{
+  "registerUser": {
+    "nome": "joao2",
+    "email": "joao2@teste.com",
+    "password": "teste"
+  },
+  "registerUserAdmin": {
+    "nome": "ana2",
+    "email": "ana2@teste.com",
+    "password": "teste",
+    "admin": true
+  },
+  "errorMessage": {
+      "nameError": "Nome é obrigatório",
+      "emailUsed": "Este email já está sendo usado",   
+      "emailError": "Email é obrigatório",
+      "passwordError": "Password é obrigatório"
+  },
+  "successMessage": {
+      "registerSuccess": "Cadastro realizado com sucesso"
+  }
+}
