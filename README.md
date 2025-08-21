@@ -4,7 +4,7 @@ Este projeto contém uma suíte de testes automatizados para o front-end da apli
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto teste
 
 ```bash
 cypress/
