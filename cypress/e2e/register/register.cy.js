@@ -31,7 +31,7 @@ describe('Fazer Login no sistema', () => {
         cy.contains('h1', 'Bem Vindo')
             .should('be.visible')
     })
-    it('Não deve cadastrar um usuario no sistema com Nome existente', () => {
+    it('Não deve cadastrar um usuario no sistema com Email existente', () => {
         cy.register(registerUser.nome, registerUser.email, registerUser.password)
 
         cy.submitRegister()
