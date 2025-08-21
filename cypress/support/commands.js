@@ -54,6 +54,32 @@ Cypress.Commands.add('loginAdmin', ()=>{
     cy.contains('h1', 'Bem Vindo')
         .should('be.visible')
 })
+Cypress.Commands.add('cadastrar', (nome, email, senha, admin)=>{
+    cy.get('[data-testid="cadastrar"]')
+      .click()
+
+    cy.contains('h2', 'Cadastro')
+      .should('be.visible')
+
+    cy.get('[data-testid="nome"]')
+      .type(nome)
+
+    cy.get('[data-testid="email"]')
+      .type(email)
+
+    cy.get('[data-testid="password"]')
+      .type(senha)
+
+    if(admin){
+      cy.get('.form-check')
+          .find('input')
+          .check()
+          .should('be.checked') 
+    }
+
+    cy.get('[data-testid="cadastrar"]')
+      .click()
+})
 Cypress.Commands.add('mensagem', (elemento , mesagem)=>{
     cy.contains(elemento, mesagem)
       .should('be.visible');

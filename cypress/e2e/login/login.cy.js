@@ -7,7 +7,7 @@ describe("Fazer Login no sistema", () => {
 
   beforeEach(() => {
     cy.start();
-    cy.fixture('loginData.json').then((data) => {
+    cy.fixture('loginUserData.json').then((data) => {
       EMAIL_VALIDO = data.userValido.email
       SENHA_VALIDO = data.userValido.senha
       EMAIL_INVALIDO = data.userInvalido.email_invalido
